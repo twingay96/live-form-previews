@@ -12,6 +12,8 @@
     </div>
   <% end %>
 
+  <div id="preview"></div>
+
   <div>
     <%= form.label :name, style: "display: block" %>
     <%= form.text_field :name %>
@@ -23,7 +25,7 @@
   </div>
 
   <div>
-    <%= form.button "Preview", formaction: preview_tasks_path , name: "_method" , value: "post" %>  <%# 임의로 설정한 라우트 %>
+    <%= form.button "Preview / Validate", formaction: preview_tasks_path , name: "_method" , value: "post" %>  <%# 임의로 설정한 라우트 %>
     <%# name은 key value 는 전송할 값 => 즉, _method라는 이름의 키에 대해 "post"라는 값을 전송하라는 지시 %>
     <%= form.submit %>  <%#  Rails는 제공된 model 객체의 상태에 따라 자동으로 제출 경로를 결정 %>
   </div>

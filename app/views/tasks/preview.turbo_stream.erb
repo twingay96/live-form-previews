@@ -1,0 +1,9 @@
+<%= turbo_stream.update :preview do%>
+<%#  form.html.erb(터보스트림으로 응답을 할 페이지)의 <div id="preview"> 의 요소를 비동기적으로 update %>
+    Attributes
+    <%= @preview_task.attributes%>
+    Valid?
+    <%= @preview_task.valid? %>
+    Errors:
+    <%= @preview_task.errors.full_messages %>
+<% end %> 
