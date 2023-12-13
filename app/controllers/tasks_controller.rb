@@ -5,6 +5,10 @@ class TasksController < ApplicationController
   def index
     @tasks = Task.all
   end
+  def preview
+    @preview_task = Task.new(task_params)
+    redirect_to request.url , notice: "#{@preview_task.valid?} #{@preview_task.errors.full_messages}"
+  end
 
   # GET /tasks/1 or /tasks/1.json
   def show
