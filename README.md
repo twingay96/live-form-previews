@@ -25,6 +25,9 @@ data: { controller: "autosubmit" }: HTML 태그에 data-controller="autosubmit" 
 ![image](https://github.com/twingay96/live-form-previews/assets/64403357/b1560453-a542-40e3-b76b-988653bec846)
 data: { autosubmit_target: "submitbutton" }: 이것은 Stimulus 프레임워크의 데이터 속성으로, autosubmit 컨트롤러의 submitbutton 타겟과 관련이 있습니다. 
 이는 Stimulus 컨트롤러가 특정 버튼을 타겟으로 삼아 자동으로 폼을 제출하도록 하는 로직을 가질 수 있음을 나타냅니다.
+
+formaction은 특정 버튼에 대해 폼의 action 속성을 재정의할 때 사용되며, 하나의 폼에 여러 제출 버튼이 있고 각 버튼이 다른 동작을 해야 할 때 유용합니다. 이미지의 코드에서 formaction은 버튼이 클릭됐을 때 preview_tasks_path로 데이터를 전송하도록 지정하고 있습니다. 이는 폼의 기본 action URL을 무시하고, 이 버튼에 대해서만 새로운 도착지(URL)를 설정합니다.
+
 ![4-html](https://github.com/twingay96/live-form-previews/assets/64403357/f7297b83-7641-4481-9a0f-373c3d31098c)
 (html로 표기된 모습)
 
