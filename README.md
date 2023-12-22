@@ -1,3 +1,19 @@
+![image](https://github.com/twingay96/live-form-previews/assets/64403357/7e46bc8a-a91f-41f8-a1b0-c5ee00cb621e)![image](https://github.com/twingay96/live-form-previews/assets/64403357/af8e2482-3ccf-431a-b484-43a74d95192a)    rails g scaffold tasks
+실행후 생성된 tasks모델 파일(app/models/task.rb)에  서버측 유효성 검증 추가:
+
+![image](https://github.com/twingay96/live-form-previews/assets/64403357/b6d049d7-d55e-44cf-92c9-8bebcad78bc0)
+
+ActiveRecord에서 제공하는 기능으로, 모델 객체가 데이터베이스에 저장되기 전에 
+특정 조건을 충족하는지 검사하여 만약 조건을 충족하지 않으면 객체 저장이 거부되고 , 
+유효 하지 않음을 나타내는 오류 메시지가 "errors"객체에 추가됨. 이 오류 메시지에 접근하려면, 
+
+모델 인스턴스에서 errors.full_messages 또는 errors[:attribute]와 같은 메소드를 호출하면 됩니다. 
+예를 들어, task 객체에 대한 유효성 검사가 실패하면 task.errors.full_messages를 호출하여 모든 오류 메시지를 배열로 가져올 수 있습니다.
+
+new.html.erb의 partial인 _form.html.erb에서 :
+
+
+![image](https://github.com/twingay96/live-form-previews/assets/64403357/7352d451-2889-4aae-8091-cf2d9aa5dbc4)
 ![image](https://github.com/twingay96/live-form-previews/assets/64403357/35862ca8-abe3-4499-ba4a-b942139c3fc4)
 
 ![image](https://github.com/twingay96/live-form-previews/assets/64403357/d5574669-294f-4819-921c-8c65a186b358)
