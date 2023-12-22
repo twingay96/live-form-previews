@@ -1,4 +1,4 @@
-![image](https://github.com/twingay96/live-form-previews/assets/64403357/7e46bc8a-a91f-41f8-a1b0-c5ee00cb621e)![image](https://github.com/twingay96/live-form-previews/assets/64403357/af8e2482-3ccf-431a-b484-43a74d95192a)    rails g scaffold tasks
+   rails g scaffold tasks
 실행후 생성된 tasks모델 파일(app/models/task.rb)에  서버측 유효성 검증 추가:
 
 ![image](https://github.com/twingay96/live-form-previews/assets/64403357/b6d049d7-d55e-44cf-92c9-8bebcad78bc0)
